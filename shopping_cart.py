@@ -15,7 +15,7 @@ class ShoppingCart:
 
     def get_items(self) -> List[str]:
         """Return a list of all items in the cart."""
-        pass
+        return self.items
 
     def get_total_price(self, price_map):
         """Calculate the total price of items in the cart using the given price map."""
