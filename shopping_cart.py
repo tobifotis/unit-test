@@ -22,4 +22,7 @@ class ShoppingCart:
 
     def get_total_price(self, price_map):
         """Calculate the total price of items in the cart using the given price map."""
-        pass
+        total_price = 0
+        for item in self.items:
+            total_price += price_map.get(item)
+        return total_price
